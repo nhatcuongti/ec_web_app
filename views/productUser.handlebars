@@ -1,0 +1,55 @@
+<div class="row">
+    {{#each this.products}}
+    <div class = "col-sm-4 mb-3">
+        <div class="card h-100" style="margin: 0;">
+            <img src="/public/imgs/sp/{{ProID}}/main_thumbs.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ProName}}</h5>
+                <p class="card-text">{{TinyDes}}</p>
+                <p class="card-text text-danger">{{format_number Price}}</p>
+                
+            </div>
+
+            <div class = "card-footer text-muted">
+                <a href="#" class="btn btn-primary">Detail</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+
+{{!-- <div class="card">
+  <h4 class="card-header d-flex justify-content-between">
+    Products
+  </h4>
+  <div class="card-body">
+      <div class="row">
+        {{#each this.products}}
+          <div class="col-sm-4 mb-3">
+            <div class="card h-100">
+              <img class="card-img-top" src="/public/imgs/sp/{{ProID}}/main_thumbs.jpg" alt="{{ProName}}" title="{{ProName}}">
+              <div class="card-body">
+                <h5 class="card-title">{{ProName}}</h5>
+                <h5 class="card-title text-danger">{{Price}}</h5>
+                <p class="card-text">{{TinyDes}}</p>
+              </div>
+              <div class="card-footer text-muted">
+                <a class="btn btn-sm btn-outline-primary" href="/products/detail/{{ProID}}" role="button">
+                  <i class="fa fa-eye" aria-hidden="true"></i>
+                  Details
+                </a>
+                <a class="btn btn-sm btn-outline-success" href="#" role="button">
+                  <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                  Add to cart
+                </a>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+  </div>
+  <div class="card-footer text-muted">
+    2 days ago
+  </div>
+</div> --}}

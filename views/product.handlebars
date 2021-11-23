@@ -1,0 +1,48 @@
+<div class="card">
+    <div class="card-header d-flex justify-content-between">
+        <p class="h2 text-primary">Products</p>
+        <a class="btn btn-outline-primary btn-sm" href="/products/user/{{this.ID}}" role="button">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            User
+        </a>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Product</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+                <th scope="col">Quantity</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{#each this.products}}
+                <tr>
+                    <th scope="row">
+                        {{ProID}}
+                    </th>
+                    <td>
+                        {{ProName}}
+                    </td>
+                    <td>
+                        {{TinyDes}}
+                    </td>
+                    <td>
+                        {{Price}}
+                    </td>
+                    <td>
+                        {{Quantity}}
+                    </td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+    <div class="card-footer text-muted">
+        Footer
+    </div>
+</div>
+
+
